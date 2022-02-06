@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5183134299785494761}
   - component: {fileID: 5183134299785494766}
   - component: {fileID: 5183134299785494767}
+  - component: {fileID: 7368912505698607309}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -83,6 +84,66 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5183134299785494764}
   m_Enabled: 1
+--- !u!114 &7368912505698607309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5183134299785494764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 5183134299785494761}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 1
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &5183134301092324707
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,6 +263,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 7760726744540058604, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760726744540058604, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760726744540058604, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760726744540058604, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7760726744540058604, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.92
+      objectReference: {fileID: 0}
     - target: {fileID: 8131885686299859623, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
       propertyPath: m_LocalScale.x
       value: 3
@@ -219,8 +300,12 @@ PrefabInstance:
       value: 3.12
       objectReference: {fileID: 0}
     - target: {fileID: 8131885686299859623, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8131885686299859623, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.75
+      value: -4.24
       objectReference: {fileID: 0}
     - target: {fileID: 8927739688164104490, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
       propertyPath: m_LocalScale.x
@@ -240,7 +325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8927739688164104490, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.18
+      value: -3.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0dbb7caf92a46b428b7f3e21d85e35b, type: 3}
