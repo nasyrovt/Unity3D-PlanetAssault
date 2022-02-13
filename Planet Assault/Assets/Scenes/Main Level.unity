@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.19141647, g: 0.07921351, b: 0.039511815, a: 1}
+  m_IndirectSpecularColor: {r: 0.20420927, g: 0.08388903, b: 0.04325997, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7021,6 +7021,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2398756091014026848, guid: de22fffcfd233c34f9821ddef2c22495, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2398756091014026848, guid: de22fffcfd233c34f9821ddef2c22495, type: 3}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2398756091014026849, guid: de22fffcfd233c34f9821ddef2c22495, type: 3}
       propertyPath: m_Name
       value: Music Player
